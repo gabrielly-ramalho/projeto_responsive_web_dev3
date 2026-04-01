@@ -1,0 +1,63 @@
+ body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .secao {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      width: 300px;
+    }
+
+    .secao > p {
+      font-size: 13px;
+      color: #141414;
+      margin: 0 0 0.75rem;
+    }
+
+    .paginacao {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 4px;
+    }
+
+    .paginacao > li > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      color: rgb(206, 99, 172);
+      text-decoration: none;
+    }
+
+    .paginacao > li.ativo > a {
+      background: rgb(206, 99, 172);;
+      color: #fff;
+      border-color: rgb(206, 99, 172);;
+    }
+
+    .paginacao.hover > li > a:hover {
+      background: #e6f1fb;
+      color: rgb(206, 99, 172);
+      border-color: rgb(222, 151, 200);
+      transition:background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .paginacao.hover > li.ativo > a:hover {
+      background:  rgb(206, 99, 172);
+      color: #fff;
+      border-color: rgb(206, 99, 172);
+    }
